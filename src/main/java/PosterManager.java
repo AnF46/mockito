@@ -1,17 +1,23 @@
 public class PosterManager {
     private String movieName;
+    private int movie;
     private PosterManager[] movies = new PosterManager[0];
 
-    public PosterManager (String movieName) {
+    public PosterManager (String movieName, int movie) {
         this.movieName = movieName;
+        this.movie = movie;
     }
 
     public PosterManager (){
-
+        this.movie = 5;
     }
 
-    public String getMovie(){
-        return movieName;
+    public int getMovieName() {
+        return movie;
+    }
+
+    public int setMovie() {
+        return movie;
     }
 
     public void setMovieName(String movieName) {
@@ -41,5 +47,6 @@ public class PosterManager {
         }
         return reversed;
     }
+
 
 }
